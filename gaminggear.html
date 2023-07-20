@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming sets</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+  <style>
+    .nav-list, .info-form {
+      border: 1px solid #000;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    .nav-list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav-item {
+      list-style: none;
+    }
+  </style>
+</head>
+<body>
+  <nav aria-label="Main Navigation">
+    <ul class="nav-list">
+      <li class="nav-item"><a class="nav-link" href="gaminggear.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="order.html">Order Here</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1 class="title">Gaming gear VN</h1>
+    <hr>
+  </header>
+
+  <main>
+    <section class="hero">
+    </section>
+    
+    <section class="info-form">
+      <h2>Sign In</h2>
+      <form action="login_process.html" method="POST" aria-label="Sign In Form">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" value=""><br>
+  
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" value=""><br>
+  
+        <input type="submit" name="submit" value="Sign In">
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

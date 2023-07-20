@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+  <style>
+    .nav-list, .order-form, .info-form {
+      border: 1px solid #000;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    .nav-list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav-item {
+      list-style: none;
+    }
+  </style>
+
+</head>
+<body>
+  <nav aria-label="Main Navigation">
+    <ul class="nav-list">
+      <li class="nav-item"><a class="nav-link" href="gaminggear.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="order.html">Order Here</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="aboutus.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="order-form">
+      <h1>Order what you want here</h1>
+      <form action="order_process.html" method="POST" aria-label="Order Form">
+        <label for="equipment-select">Choose the equipment you want:</label>
+        <select name="gears" id="equipment-select">
+          <option value="">--Please choose an option--</option>
+          <option value="Mouse">Mouse</option>
+          <option value="Keyboard">Keyboard</option>
+          <option value="PC">PC</option>
+          <option value="Monitor">Monitor</option>
+          <option value="Laptop">Laptop</option>
+          <option value="Charging cables">Charging cables</option>
+          <option value="Speakers">Speakers</option>
+        </select>
+        <input type="submit" value="Submit Order">
+      </form>
+    </section>
+
+  </main>
+</body>
+</html>
